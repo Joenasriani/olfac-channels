@@ -1,0 +1,9 @@
+Subsystem,Item,Qty,Role
+Control,ESP32-S3,1,Controller
+Power,Battery 10000mAh,1,Power
+Fluidics,Peristaltic pumps,8,Channels
+Atomization,Piezo atomizers,8,Mist
+Airflow,Evacuation pump,1,Clear
+Electronics,MOSFETs,9,Switching
+Mechanical,Rear housing,1,Mount
+Mechanical,Facial interface shell,1,Front
