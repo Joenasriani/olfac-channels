@@ -3,8 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="AURA project overview: an integrated olfactory facial interface and rear-strap control system for Quest-class headsets." />
-  <title>AURA — Integrated Olfactory Interface Research Overview</title>
+  <meta name="description" content="AURA by Joe Nasr / QuestRequestVR: technical research on an olfactory XR interface for Quest-class headsets using localized scent delivery, active evacuation, BLE control and wearable hardware." />
+  <meta name="author" content="Joe Nasr" />
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large" />
+  <link rel="canonical" href="https://joenasriani.github.io/olfac-channels/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="AURA — Olfactory XR Interface for Quest-Class Headsets | Joe Nasr" />
+  <meta property="og:description" content="Technical research and prototype-design study of a wearable olfactory interface for immersive VR/MR." />
+  <meta property="og:url" content="https://joenasriani.github.io/olfac-channels/" />
+  <title>AURA — Olfactory XR Interface for Quest-Class Headsets | Joe Nasr</title>
   <style>
     :root {
       --bg: #0b1020;
@@ -87,12 +94,25 @@
       .hero, .section { padding: 20px; }
     }
   </style>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"TechArticle",
+    "headline":"AURA — Olfactory XR Interface for Quest-Class Headsets",
+    "url":"https://joenasriani.github.io/olfac-channels/",
+    "author":{"@type":"Person","@id":"https://joe-nasr-signals.vercel.app/v2/#joe-nasr","name":"Joe Nasr","url":"https://joe-nasr-signals.vercel.app/v2/"},
+    "about":["olfactory XR","virtual reality","mixed reality","multisensory interfaces","wearable computing","human-computer interaction","Meta Quest"],
+    "keywords":"olfactory XR, VR scent interface, mixed reality olfactory interface, Quest olfactory interface, wearable scent display, multisensory VR, olfactory HCI",
+    "isPartOf":{"@type":"CollectionPage","url":"https://joenasriani.github.io/joe-research-registry/quest-research.html"}
+  }
+  </script>
 </head>
 <body>
   <div class="wrap">
     <header class="hero" id="top">
-      <div class="eyebrow">Academic project overview</div>
+      <div class="eyebrow">Technical research / prototype-design study</div>
       <h1>AURA</h1>
+      <p class="muted">Joe Nasr / QuestRequestVR · Olfactory XR / wearable multimodal interfaces</p>
       <p class="muted">Integrated olfactory facial interface and rear-strap control system for Quest-class headsets.</p>
       <p>
         This repository documents a wearable olfactory platform designed to deliver localized scent pulses near the nose,
@@ -215,7 +235,7 @@
       </p>
       <pre>{"cmd":"fire","ch":4,"pulse_ms":70,"clear_ms":1500}</pre>
       <p>
-        The documented rules are academically sensible: channel cooldown, automatic clearing, stop-all on disconnect,
+        The documented engineering rules include: channel cooldown, automatic clearing, stop-all on disconnect,
         and low-battery blocking to prevent unsafe operation or uncontrolled scent release.
       </p>
     </section>
@@ -228,7 +248,7 @@
         <li>Scale to the full eight-channel system after delivery, clearing, and contamination testing.</li>
       </ol>
       <p>
-        This progression mirrors a professional hardware research workflow: verify the core mechanism first, then study
+        This progression follows a staged prototyping workflow: verify the core mechanism first, then study
         ergonomics and reliability, and only then complete the full target build.
       </p>
     </section>
@@ -267,7 +287,7 @@ int pumps[CHANNELS]={4,5,6,7,8,9,10,11};</pre>
         <li><strong>AURA_BUILD_GUIDE.md</strong> — phased development and validation plan</li>
         <li><strong>AURA_SYSTEM_BOM.csv</strong> — bill of materials and subsystem inventory</li>
         <li><strong>ESP32_S3_AURA_CONTROLLER.ino</strong> — embedded controller scaffold</li>
-        <li><strong>index.html</strong> — this publication-style overview</li>
+        <li><strong>index.html</strong> — this public technical overview</li>
         <li><strong>README.md</strong> — project landing page and deployment link</li>
       </ol>
     </section>
@@ -276,16 +296,15 @@ int pumps[CHANNELS]={4,5,6,7,8,9,10,11};</pre>
       <h2>Conclusion</h2>
       <p>
         In its current form, AURA presents a coherent wearable research prototype concept with a clear mechanical,
-        electronic, and protocol structure. A professional presentation benefits from framing the repository as a research
-        paper-style overview, with the system specification first, protocol second, build methodology third, and hardware
-        inventory and firmware support following thereafter.
+        electronic, and protocol structure. The repository is best read as a technical research and prototype-design study. The available files document an engineering architecture and development path; they do not by themselves prove that the complete eight-channel wearable system has been built, independently validated, safety-certified, or experimentally shown to meet its intended performance targets.
       </p>
     </section>
 
     <footer>
       <p>
-        Repository: <a href="https://github.com/Joenasriani/quest-olfac">Joenasriani/quest-olfac</a> ·
-        Deploy target: <a href="https://joenasriani.github.io/quest-olfac/">GitHub Pages</a>
+        Repository: <a href="https://github.com/Joenasriani/olfac-channels">Joenasriani/olfac-channels</a> ·
+        Live project: <a href="https://joenasriani.github.io/olfac-channels/">GitHub Pages</a> ·
+        <a href="https://joenasriani.github.io/joe-research-registry/quest-research.html">Research collection</a>
       </p>
     </footer>
   </div>
