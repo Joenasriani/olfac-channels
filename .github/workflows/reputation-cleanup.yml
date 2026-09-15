@@ -14,22 +14,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Correct AURA public research framing
+      - name: Remove remaining academic implication
         run: |
           python - <<'PY'
           from pathlib import Path
           p=Path('index.html')
-          s=p.read_text()
-          s=s.replace('<meta name="description" content="AURA project overview: an integrated olfactory facial interface and rear-strap control system for Quest-class headsets." />', '<meta name="description" content="AURA by Joe Nasr / QuestRequestVR: technical research on an olfactory XR interface for Quest-class headsets using localized scent delivery, active evacuation, BLE control and wearable hardware." />\n  <meta name="author" content="Joe Nasr" />\n  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large" />\n  <link rel="canonical" href="https://joenasriani.github.io/olfac-channels/" />\n  <meta property="og:type" content="article" />\n  <meta property="og:title" content="AURA — Olfactory XR Interface for Quest-Class Headsets | Joe Nasr" />\n  <meta property="og:description" content="Technical research and prototype-design study of a wearable olfactory interface for immersive VR/MR." />\n  <meta property="og:url" content="https://joenasriani.github.io/olfac-channels/" />')
-          s=s.replace('<title>AURA — Integrated Olfactory Interface Research Overview</title>', '<title>AURA — Olfactory XR Interface for Quest-Class Headsets | Joe Nasr</title>')
-          s=s.replace('</style>\n</head>', '''</style>\n  <script type="application/ld+json">\n  {\n    "@context":"https://schema.org",\n    "@type":"TechArticle",\n    "headline":"AURA — Olfactory XR Interface for Quest-Class Headsets",\n    "url":"https://joenasriani.github.io/olfac-channels/",\n    "author":{"@type":"Person","@id":"https://joe-nasr-signals.vercel.app/v2/#joe-nasr","name":"Joe Nasr","url":"https://joe-nasr-signals.vercel.app/v2/"},\n    "about":["olfactory XR","virtual reality","mixed reality","multisensory interfaces","wearable computing","human-computer interaction","Meta Quest"],\n    "keywords":"olfactory XR, VR scent interface, mixed reality olfactory interface, Quest olfactory interface, wearable scent display, multisensory VR, olfactory HCI",\n    "isPartOf":{"@type":"CollectionPage","url":"https://joenasriani.github.io/joe-research-registry/quest-research.html"}\n  }\n  </script>\n</head>''')
-          s=s.replace('<div class="eyebrow">Academic project overview</div>', '<div class="eyebrow">Technical research / prototype-design study</div>')
-          s=s.replace('<h1>AURA</h1>', '<h1>AURA</h1>\n      <p class="muted">Joe Nasr / QuestRequestVR · Olfactory XR / wearable multimodal interfaces</p>')
-          s=s.replace('The documented rules are academically sensible:', 'The documented engineering rules include:')
-          s=s.replace('This progression mirrors a professional hardware research workflow:', 'This progression follows a staged prototyping workflow:')
-          s=s.replace('<li><strong>index.html</strong> — this publication-style overview</li>', '<li><strong>index.html</strong> — this public technical overview</li>')
-          s=s.replace('A professional presentation benefits from framing the repository as a research\n        paper-style overview, with the system specification first, protocol second, build methodology third, and hardware\n        inventory and firmware support following thereafter.', 'The repository is best read as a technical research and prototype-design study. The available files document an engineering architecture and development path; they do not by themselves prove that the complete eight-channel wearable system has been built, independently validated, safety-certified, or experimentally shown to meet its intended performance targets.')
-          s=s.replace('Repository: <a href="https://github.com/Joenasriani/quest-olfac">Joenasriani/quest-olfac</a> ·\n        Deploy target: <a href="https://joenasriani.github.io/quest-olfac/">GitHub Pages</a>', 'Repository: <a href="https://github.com/Joenasriani/olfac-channels">Joenasriani/olfac-channels</a> ·\n        Live project: <a href="https://joenasriani.github.io/olfac-channels/">GitHub Pages</a> ·\n        <a href="https://joenasriani.github.io/joe-research-registry/quest-research.html">Research collection</a>')
+          s=p.read_text().replace('Repository files in scholarly reading order','Repository files in recommended reading order')
           p.write_text(s)
           PY
       - name: Commit cleanup
@@ -37,5 +27,5 @@ jobs:
           git config user.name "Joe Nasr Reputation Maintenance"
           git config user.email "actions@users.noreply.github.com"
           git add index.html
-          git diff --cached --quiet || git commit -m "Correct AURA research framing and identity metadata"
+          git diff --cached --quiet || git commit -m "Finish AURA terminology cleanup"
           git push
