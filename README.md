@@ -5,7 +5,7 @@
 **Primary field:** Olfactory XR / wearable multimodal interfaces  
 **Live project:** https://joenasriani.github.io/olfac-channels/  
 **Research collection:** https://joenasriani.github.io/joe-research-registry/quest-research.html  
-**Canonical identity:** https://joe-nasr-signals.vercel.app/v2/
+**Identity:** https://joe-nasr-signals.vercel.app/v2/
 
 ## What this project investigates
 
@@ -54,4 +54,4 @@ The documented concept includes:
 
 ## Attribution
 
-AURA is part of Joe Nasr / QuestRequestVR's public immersive-systems research collection. Creative-technology identity and authorship are linked through the Joe Nasr Research Registry and canonical identity record above.
+AURA is part of Joe Nasr / QuestRequestVR's public immersive-systems research collection. Creative-technology identity and authorship are linked through the Joe Nasr Research Registry and identity record above.
