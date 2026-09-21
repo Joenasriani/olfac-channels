@@ -5,7 +5,7 @@
 **Primary field:** Olfactory XR / wearable multimodal interfaces  
 **Live project:** https://joenasriani.github.io/olfac-channels/  
 **Research collection:** https://joenasriani.github.io/joe-research-registry/quest-research.html  
-**Identity:** https://joe-nasr-signals.vercel.app/v2/
+**Identity:** https://joe-nasr-signals.vercel.app/
 
 ## What this project investigates
 
