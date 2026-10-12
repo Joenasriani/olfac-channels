@@ -1,4 +1,4 @@
-# AURA — Olfactory XR Interface for Quest-Class Headsets
+# AURA: Olfactory XR Interface for Quest-Class Headsets
 
 **Author:** Joe Nasr / QuestRequestVR  
 **Status:** Technical research and prototype-design study  
