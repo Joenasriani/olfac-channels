@@ -1,6 +1,5 @@
 # AURA: Olfactory XR Interface for Quest-Class Headsets
 
-**Author:** Joe Nasr / QuestRequestVR  
 **Status:** Technical research and prototype-design study  
 **Primary field:** Olfactory XR / wearable multimodal interfaces  
 **Live project:** https://joenasriani.github.io/olfac-channels/  
@@ -54,4 +53,6 @@ The documented concept includes:
 
 ## Attribution
 
-AURA is part of Joe Nasr / QuestRequestVR's public immersive-systems research collection. Creative-technology identity and authorship are linked through the Joe Nasr Research Registry and identity record above.
+AURA is part of the QuestRequestVR public immersive-systems research collection. Authorship records are linked above.
+
+Credit: Joe Nasr
