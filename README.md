@@ -44,12 +44,12 @@ The documented concept includes:
 
 ## Source files
 
-- `AURA_SYSTEM_SPEC.md` — system definition and architecture
-- `AURA_BLE_PROTOCOL.md` — digital control interface
-- `AURA_BUILD_GUIDE.md` — staged prototyping plan
-- `AURA_SYSTEM_BOM.csv` — bill of materials
-- `ESP32_S3_AURA_CONTROLLER.ino` — embedded-controller scaffold
-- `index.html` — public technical overview
+- `AURA_SYSTEM_SPEC.md`  –  system definition and architecture
+- `AURA_BLE_PROTOCOL.md`  –  digital control interface
+- `AURA_BUILD_GUIDE.md`  –  staged prototyping plan
+- `AURA_SYSTEM_BOM.csv`  –  bill of materials
+- `ESP32_S3_AURA_CONTROLLER.ino`  –  embedded-controller scaffold
+- `index.html`  –  public technical overview
 
 ## Attribution
 

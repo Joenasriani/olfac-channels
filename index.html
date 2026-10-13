@@ -116,7 +116,7 @@
       <div class="eyebrow">Technical research / prototype-design study</div>
       <h1>AURA: Olfactory XR Interface for Quest-Class Headsets</h1>
       <p class="muted">Olfactory XR / wearable multimodal interfaces</p>
-      <p class="muted">Integrated olfactory facial interface and rear-strap control system for Quest-class headsets.</p>
+      <p class="muted">Proposed olfactory facial interface and rear-strap control system for Quest-class headsets.</p>
       <p>
         This repository documents a wearable olfactory platform designed to deliver localized scent pulses near the nose,
         clear residual aroma rapidly through active evacuation, and keep the front interface lightweight by relocating
@@ -148,12 +148,7 @@
 
     <section class="section" id="abstract">
       <h2>Abstract</h2>
-      <p>
-        AURA is an integrated olfactory interface intended for immersive VR/MR experiences. The project combines a
-        facial interface, multi-channel liquid scent delivery, and active evacuation to support brief, localized scent
-        presentation while minimizing cross-contamination and maintaining wearability. The repository indicates an
-        ESP32-S3-based rear-strap controller, BLE command interface, and an eight-channel pump/atomization architecture.
-      </p>
+      <p>AURA is a proposed olfactory interface for VR/MR experiences. The specification describes an ESP32-S3 controller, BLE commands, eight liquid scent channels and active evacuation. The repository provides design documents and a controller scaffold; it does not establish a completed eight-channel wearable or measured clearing, latency, scent isolation or usability.</p>
     </section>
 
     <section class="section" id="background">
@@ -167,8 +162,7 @@
           </p>
           <p>
             The build guide frames the implementation in phases: a bench prototype, a wearable alpha, and then a full
-            eight-channel build. This progression is appropriate for experimental validation, usability testing, and
-            incremental risk reduction.
+            eight-channel build. Each phase requires recorded hardware tests and usability evaluation before proceeding.
           </p>
         </div>
         <div class="card">
@@ -285,22 +279,19 @@ int pumps[CHANNELS]={4,5,6,7,8,9,10,11};</pre>
     <section class="section" id="references">
       <h2>Repository files in recommended reading order</h2>
       <ol>
-        <li><strong>AURA_SYSTEM_SPEC.md</strong> — primary system definition and architecture</li>
-        <li><strong>AURA_BLE_PROTOCOL.md</strong> — digital control interface and command model</li>
-        <li><strong>AURA_BUILD_GUIDE.md</strong> — phased development and validation plan</li>
-        <li><strong>AURA_SYSTEM_BOM.csv</strong> — bill of materials and subsystem inventory</li>
-        <li><strong>ESP32_S3_AURA_CONTROLLER.ino</strong> — embedded controller scaffold</li>
-        <li><strong>index.html</strong> — this public technical overview</li>
-        <li><strong>README.md</strong> — project landing page and deployment link</li>
+        <li><strong>AURA_SYSTEM_SPEC.md</strong>  –  primary system definition and architecture</li>
+        <li><strong>AURA_BLE_PROTOCOL.md</strong>  –  digital control interface and command model</li>
+        <li><strong>AURA_BUILD_GUIDE.md</strong>  –  phased development and validation plan</li>
+        <li><strong>AURA_SYSTEM_BOM.csv</strong>  –  bill of materials and subsystem inventory</li>
+        <li><strong>ESP32_S3_AURA_CONTROLLER.ino</strong>  –  embedded controller scaffold</li>
+        <li><strong>index.html</strong>  –  this public technical overview</li>
+        <li><strong>README.md</strong>  –  project landing page and deployment link</li>
       </ol>
     </section>
 
     <section class="section" id="conclusion">
       <h2>Conclusion</h2>
-      <p>
-        In its current form, AURA presents a coherent wearable research prototype concept with a clear mechanical,
-        electronic, and protocol structure. The repository is best read as a technical research and prototype-design study. The available files document an engineering architecture and development path; they do not by themselves prove that the complete eight-channel wearable system has been built, independently validated, safety-certified, or experimentally shown to meet its intended performance targets.
-      </p>
+      <p>AURA documents a proposed wearable architecture and development plan. The available files do not establish that the complete eight-channel system has been built, independently validated or shown to meet its intended performance targets.</p>
     </section>
 
     <footer>
