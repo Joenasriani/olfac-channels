@@ -48,7 +48,7 @@ The documented concept includes:
 - `AURA_BLE_PROTOCOL.md`  –  digital control interface
 - `AURA_BUILD_GUIDE.md`  –  staged prototyping plan
 - `AURA_SYSTEM_BOM.csv`  –  bill of materials
-- `ESP32_S3_AURA_CONTROLLER.ino`  –  embedded-controller scaffold
+- `ESP32_S3_AURA_CONTROLLER.ino`  –  minimal pin-setup scaffold, not functioning BLE or pump-control firmware
 - `index.html`  –  public technical overview
 
 ## Attribution
@@ -56,3 +56,5 @@ The documented concept includes:
 AURA is part of the QuestRequestVR public immersive-systems research collection. Authorship records are linked above.
 
 Credit: Joe Nasr
+
+Portfolio: https://joe-nasr-signals.vercel.app/
